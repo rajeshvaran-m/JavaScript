@@ -8,6 +8,20 @@
 
 > **Multi-paradigm:** We can use different styles of programming
 
+### Summary
+
+<<<<<<< HEAD
+
+- [Values and Variables](#Values-and-Variables)
+- [Data Types](#Data-Types)
+- # [let const and var](#let-const-and-var)
+- [Values and Variables](#Values-and-Variables)
+- [Data Types](#Data-Types)
+- [let, const and var](#let,-const-and-var)
+  > > > > > > > 21e9312 (Update README.md)
+- [Operators](#Operators)
+- [Operator Precedence](#Operator-Precedence)
+
 ## Values and Variables
 
 - A variable is a box where we can store values, later in the code we can reference the variable over and over again.
@@ -97,7 +111,7 @@ console.log(typeof job);
 //output: object
 ```
 
-## let, const and var
+## let const and var
 
 ### let
 
@@ -177,3 +191,64 @@ NAME = "James Murphy";
 - **Logical AND (&&)**: Returns true if both statements are true.
 - **Logical OR (||)**: Returns true if one of the statements is true.
 - **Logical NOT (!)**: Reverses the result, returns false if the result is true.
+
+## Operator Precedence
+
+Operator precedence determines the order in which operators are evaluated in expressions. In JavaScript, operators with higher precedence are evaluated before operators with lower precedence. If operators have the same precedence, they are evaluated based on their associativity.
+
+### Table of Operator Precedence
+
+The following table lists operators in descending order of precedence (from highest to lowest):
+
+| Precedence | Operator     | Description                     | Associativity | Example                         |
+| ---------- | ------------ | ------------------------------- | ------------- | ------------------------------- |
+| 1          | `()`         | Grouping                        | –             | `(1+2)`                         |
+| 2          | `.`          | Member                          | Left to right | `obj.function`                  |
+| 2.1        | `[]`         | Member                          | Left to right | `brand["carName"]`              |
+| 2.2        | `new`        | Create                          | –             | `new Date("July 27, 2023")`     |
+| 2.3        | `()`         | Function Call                   | Left to right | `myFun()`                       |
+| 3          | `++`         | Postfix increment               | N/A           | `i++`                           |
+| 3.1        | `--`         | Postfix decrement               | N/A           | `i--`                           |
+| 4          | `++`         | Prefix increment                | Right to left | `++i`                           |
+| 4.1        | `--`         | Prefix decrement                | N/A           | `--i`                           |
+| 4.2        | `!`          | Logical NOT                     | Right to left | `!(x===y)`                      |
+| 4.3        | `typeof`     | Type                            | Right to left | `typeof a`                      |
+| 5          | `**`         | Exponentiation                  | Right to left | `4**2`                          |
+| 6          | `*`          | Multiplication                  | Left to right | `2*3`                           |
+| 6.1        | `/`          | Division                        | Left to right | `18/9`                          |
+| 6.2        | `%`          | Remainder                       | Left to right | `4%2`                           |
+| 7          | `+`          | Addition                        | Left to right | `2+4`                           |
+| 7.1        | `-`          | Subtraction                     | Left to right | `4-2`                           |
+| 8          | `<<`         | Left shift                      | Left to right | `y<<2`                          |
+| 8.1        | `>>`         | Right shift                     | Left to right | `y>>2`                          |
+| 8.2        | `>>>`        | Unsigned right shift            | Left to right | `y>>>2`                         |
+| 9          | `<`          | Less than                       | Left to right | `3<4`                           |
+| 9.1        | `<=`         | Less than or equal to           | Left to right | `3<=4`                          |
+| 9.2        | `>`          | Greater than                    | Left to right | `4>3`                           |
+| 9.3        | `>=`         | Greater than or equal to        | Left to right | `4>=3`                          |
+| 9.4        | `in`         | Property in object              | Left to right | `"PI" in MATH`                  |
+| 9.5        | `instanceof` | Instance of                     | Left to right | `A instanceof B`                |
+| 10         | `==`         | Equality                        | Left to right | `x==y`                          |
+| 10.1       | `!=`         | Inequality                      | Left to right | `x!=y`                          |
+| 10.2       | `===`        | Strict equality                 | Left to right | `x===y`                         |
+| 10.3       | `!==`        | Strict inequality               | Left to right | `x!==y`                         |
+| 11         | `&`          | Bitwise AND                     | Left to right | `x&y`                           |
+| 12         | `^`          | Bitwise XOR                     | Left to right | `x^y`                           |
+| 13         | `Bitwise OR` | Bitwise OR                      | Left to right | `x Bitwise OR y`                |
+| 14         | `&&`         | Logical AND                     | Left to right | `x&&y`                          |
+| 15         | `Logical OR` | Logical OR                      | Left to right | `x Logical OR y`                |
+| 16         | `? :`        | Conditional                     | Right to left | `(x>y) ? x : y`                 |
+| 17         | `=`          | Assignment                      | Right to left | `x=5`                           |
+| 17.1       | `+=`         | Addition assignment             | Right to left | `x+=5 // x=x+5`                 |
+| 17.2       | `-=`         | Subtraction assignment          | Right to left | `x-=5 // x=x-5`                 |
+| 17.3       | `*=`         | Multiplication assignment       | Right to left | `x*=5 // x=x*5`                 |
+| 17.4       | `/=`         | Division assignment             | Right to left | `x/=5 // x=x/5`                 |
+| 17.5       | `%=`         | Modulo assignment               | Right to left | `x%=5 // x=x%5`                 |
+| 17.6       | `<<=`        | Left shift assignment           | Right to left | `x<<=5 // x=x<<5`               |
+| 17.7       | `>>=`        | Right shift assignment          | Right to left | `x>>=5 // x=x>>5`               |
+| 17.8       | `>>>=`       | Unsigned right shift assignment | Right to left | `x>>>=5 // x=x>>>5`             |
+| 17.9       | `&=`         | Bitwise AND assignment          | Right to left | `x&=5 // x=x&5`                 |
+| 17.10      | `^=`         | Bitwise XOR assignment          | Right to left | `x^=5 // x=x^5`                 |
+| 17.11      | `Bitwise=`   | Bitwise OR assignment           | Right to left | `x Bitwise= 5 // x=x Bitwise 5` |
+| 18         | `yield`      | Pause function                  | Right to left | `yield x`                       |
+| 19         | `,`          | Comma                           | Left to right | `x, y`                          |

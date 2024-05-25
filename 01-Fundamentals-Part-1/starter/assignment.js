@@ -1,11 +1,11 @@
 //Values and Variables
-let country = 'India';
-let continent = 'Asia';
+const country = 'India';
+const continent = 'Asia';
 let population = 1441
 
 //Data Types
-let isIsland = false;
-let language;
+const isIsland = false;
+let language = 'Tamil';
 
 console.log({
     'Country': country,

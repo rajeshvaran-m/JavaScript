@@ -33,7 +33,7 @@
   ```js
   let myPreviousJob = "Programmer";
   let myCurrentJob = "Teacher";
-  let PI = 3.14;
+  const PI = 3.14;
   ```
 
 ## Data Types
@@ -96,3 +96,42 @@ console.log(typeof job);
 //This is a bug in javascript but was never fixed due to legacy reasons
 //output: object
 ```
+
+## let, const and var
+
+### let
+
+- let is block scoped
+- let is used for the variables which requires reassigning after its declaration
+- This is also known as **mutating** (reassigning) the variable
+- let is also used for declaring empty (undefined) variable
+
+```js
+let age = 22;
+//age variable is mutated to 23
+age = 23;
+```
+
+### const
+
+- const is used for the variables which should not be reassigned after its declaration
+- const variables are **immutable** and remains constant
+- const variable should be named in upper cases
+
+```js
+const BIRTH_YEAR = 2001;
+```
+
+```js
+const NAME = "Murphy";
+//This will throw "Assignment to constant variable" error
+NAME = "James Murphy";
+```
+
+### var
+
+- var is function scoped
+
+**For now we will be only using let or const variables**
+
+** var details Will be updated in the future **

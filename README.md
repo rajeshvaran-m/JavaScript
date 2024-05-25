@@ -135,3 +135,45 @@ NAME = "James Murphy";
 **For now we will be only using let or const variables**
 
 ** var details Will be updated in the future **
+
+## Operators
+
+### Arithmetic Operators
+
+> Arithmetic operators are used to perform arithmetic operations on numbers.
+
+- **Addition (+)**: Adds two numbers.
+- **Subtraction (-)**: Subtracts two numbers
+- **Multiplication (\*)**: Multiplies two numbers.
+- **Division (/)**: Divides one number by another.
+- **Modulus (%)**: Returns the division remainder.
+- **Increment (++)**: Increases a number by one.
+- **Decrement (--)**: Decreases a number by one.
+
+### Assignment Operators
+
+> Assignment operators assign values to variables.
+
+- **Assignment (=)**: Assigns a value to a variable.
+- **Addition Assignment (+=)**: Adds and assigns a value.
+- **Subtraction Assignment (-=)**: Subtracts and assigns a value.
+- **Multiplication Assignment (\*=)**: Multiplies and assigns a value.
+- **Division Assignment (/=)**: Divides and assigns a value.
+- **Modulus Assignment (%=)**: Calculates the modulus and assigns a value.
+
+### Comparison Operators
+
+> Comparison operators compare two values and return a boolean value.
+
+- **Equal to (==)**: Checks if two values are equal.
+- **Strict Equal to (===)**: if two values are equal and of the same type.
+- **Not Equal to (!=)**:Checks if two values are not equal.
+- **Strict Not Equal to (!==)**: Checks if two values are not equal or not of the same type.
+- **Greater than (>)**: Checks if the left value is greater than the right value.
+- **Less than (<)**: Checks if the left value is less than the right value.
+- **Greater than or Equal to (>=)**: Checks if the left value is greater than or equal to the right value.
+- **Less than or Equal to (<=)**: Checks if the left value is less than or equal to the right value.
+- **Logical Operators**: Logical operators are used to determine the logic between variables or values.
+- **Logical AND (&&)**: Returns true if both statements are true.
+- **Logical OR (||)**: Returns true if one of the statements is true.
+- **Logical NOT (!)**: Reverses the result, returns false if the result is true.

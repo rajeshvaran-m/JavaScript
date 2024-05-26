@@ -22,6 +22,7 @@
 - [If-Else Statements](#If-Else-Statements)
 - [Type Conversion and Coercion](#Type-Conversion-and-Coercion)
 - [Truthy and Falsy Values](#Truthy-and-Falsy-Values)
+- [Loose vs Strict Equality](#Loose-vs-Strict-Equality)
 
 ## Values and Variables
 
@@ -485,3 +486,31 @@ if (0 || "" || undefined || null || NaN) {
   console.log("Falsy"); // Output: Falsy
 }
 ```
+
+## Loose vs Strict Equality
+
+In JavaScript, `==` and `===` are both comparison operators used to compare values. However, they differ in how they perform the comparison.
+
+- ### Loose Equality (==)
+
+  The `==` operator, also known as the loose equality operator, compares the values on both sides after performing type coercion, if necessary. It converts the operands to the same type before making the comparison.
+
+  **Example:**
+
+  ```javascript
+  console.log(5 == "5"); // true
+  ```
+
+  > In this example, the number 5 is loosely equal to the string "5". JavaScript coerces the string to a number and then compares the values, resulting in true.
+
+- ### Strict Equality (===)
+
+  The `===` operator, also known as the strict equality operator, compares the values on both sides without performing type coercion. It checks for both value equality and type equality.
+
+  **Example:**
+
+  ```javascript
+  console.log(5 === "5"); // false
+  ```
+
+  > In this example, the number 5 is not strictly equal to the string "5" because they are of different types. JavaScript does not perform any type coercion, so the comparison results in false.

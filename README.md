@@ -21,6 +21,7 @@
 - [String and Template Literals](#String-and-Template-Literals)
 - [If-Else Statements](#If-Else-Statements)
 - [Type Conversion and Coercion](#Type-Conversion-and-Coercion)
+- [Truthy and Falsy Values](#Truthy-and-Falsy-Values)
 
 ## Values and Variables
 
@@ -460,15 +461,27 @@ Type coercion in JavaScript refers to the automatic conversion of values from on
   let num = str - 1; // 41
   ```
 
-- #### Boolean Coercion
+## Truthy and Falsy Values
 
-  > Boolean coercion occurs when a non-boolean value is used in a boolean context, such as in an `if` statement or logical operation.
+> **Boolean coercion** occurs when a non-boolean value is used in a boolean context, such as in an `if` statement or logical operation.
 
-  ```javascript
-  let value = ""; // Falsy value
-  if (value) {
-    console.log("Truthy");
-  } else {
-    console.log("Falsy"); // Output: Falsy
-  }
-  ```
+```javascript
+//Falsy Values
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+//output: False
+```
+
+**Example:**
+
+```javascript
+if (0 || "" || undefined || null || NaN) {
+  // Falsy values
+  console.log("Truthy");
+} else {
+  console.log("Falsy"); // Output: Falsy
+}
+```

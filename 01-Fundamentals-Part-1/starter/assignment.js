@@ -24,10 +24,15 @@ let finlandPopulation = 6;
 if(population > finlandPopulation) console.log('my country has more population than finland');
 else console.log('finland has more population than my country');
 
-let averagePopulationOfCountry = 33;
-if(population > averagePopulationOfCountry) console.log('my country has more population than average population of a country');
-else console.log('Average population of a country is more thn the population of my country');
-
 //String and Template Literals
 const description = `${country} is in ${continent}, and it has ${population} million people speak ${language}`
 console.log(description);
+
+//if-else conditions
+let averagePopulationOfCountry = 33;
+if(population > averagePopulationOfCountry){
+    console.log(`${country}'s population is above average`);
+} 
+else{
+    console.log(`${country}'s population is ${averagePopulationOfCountry - population} million below average`);
+}

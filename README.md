@@ -19,6 +19,7 @@
 - [Operators](#Operators)
 - [Operator Precedence](#Operator-Precedence)
 - [String and Template Literals](#String-and-Template-Literals)
+- [If-Else Statements](#If-Else-Statements)
 
 ## Values and Variables
 
@@ -319,4 +320,87 @@ let a = 5;
 let b = 10;
 let result = `The sum of ${a} and ${b} is ${a + b}.`;
 console.log(result); // "The sum of 5 and 10 is 15."
+```
+
+## If-Else Statements
+
+Conditional statements control the flow of a program based on conditions. The `if` statement executes a block of code if a specified condition is true. The `else` statement executes a block of code if the same condition is false. The `else if` statement specifies a new condition if the first condition is false.
+
+### if Statement
+
+The `if` statement is used to specify a block of code to be executed if a condition is true.
+
+```javascript
+if (condition) {
+  // code to be executed if condition is true
+}
+```
+
+**Example**
+
+```js
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+// Output: You are an adult.
+```
+
+### if-else Statement
+
+The `if-else` statement is used to specify a block of code to be executed if the condition is false.
+
+```js
+if (condition) {
+  // code to be executed if condition is true
+} else {
+  // code to be executed if condition is false
+}
+```
+
+**Example**
+
+```js
+let age = 16;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+// Output: You are a minor.
+```
+
+### if-else if-else Statement
+
+The `if-else if-else` statement is used to specify a new condition if the first condition is false.
+
+```js
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition1 is false and condition2 is true
+} else {
+  // code to be executed if condition1 and condition2 are both false
+}
+```
+
+**Example**
+
+```js
+let score = 85;
+
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 80) {
+  console.log("Grade: B");
+} else if (score >= 70) {
+  console.log("Grade: C");
+} else if (score >= 60) {
+  console.log("Grade: D");
+} else {
+  console.log("Grade: F");
+}
+// Output: Grade: B
 ```

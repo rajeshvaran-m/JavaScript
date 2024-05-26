@@ -20,6 +20,7 @@
 - [Operator Precedence](#Operator-Precedence)
 - [String and Template Literals](#String-and-Template-Literals)
 - [If-Else Statements](#If-Else-Statements)
+- [Type Conversion and Coercion](#Type-Conversion-and-Coercion)
 
 ## Values and Variables
 
@@ -336,7 +337,7 @@ if (condition) {
 }
 ```
 
-**Example**
+**Example:**
 
 ```js
 let age = 18;
@@ -359,7 +360,7 @@ if (condition) {
 }
 ```
 
-**Example**
+**Example:**
 
 ```js
 let age = 16;
@@ -386,7 +387,7 @@ if (condition1) {
 }
 ```
 
-**Example**
+**Example:**
 
 ```js
 let score = 85;
@@ -404,3 +405,70 @@ if (score >= 90) {
 }
 // Output: Grade: B
 ```
+
+## Type Conversion and Coercion
+
+JavaScript is a dynamically typed language, meaning variables can hold values of any data type. Type conversion and coercion are mechanisms to convert data from one type to another.
+
+### Type Conversion
+
+> Type conversion is the process of explicitly converting a value from one data type to another.
+
+#### Methods for Type Conversion
+
+- **String()**: Converts a value to a string.
+- **Number()**: Converts a value to a number.
+- **Boolean()**: Converts a value to a boolean.
+
+  ```javascript
+  let number = 10;
+  let stringNumber = String(number); // "10"
+
+  let stringYear = "2000";
+  let numberYear = Number(stringYear); // 2000
+  let booleanValue = Boolean(stringYear); // true
+  ```
+
+- **toString()** Method
+
+  > The `toString()` method is used to convert a value to its string representation.
+
+  ```javascript
+  let num = 42;
+  let str = num.toString(); // "42"
+  ```
+
+### Type Coercion
+
+Type coercion in JavaScript refers to the automatic conversion of values from one data type to another during JavaScript operations.
+
+- #### String Coercion
+
+  > String coercion occurs when a non-string value is used in a string context, such as concatenation with a string.
+
+  ```javascript
+  let num = 42;
+  let str = "40" + num; // "4042"
+  ```
+
+- #### Number Coercion
+
+  > Number coercion occurs when a non-numeric value is used in a numeric context, such as arithmetic operations.
+
+  ```javascript
+  let str = "42";
+  let num = str - 1; // 41
+  ```
+
+- #### Boolean Coercion
+
+  > Boolean coercion occurs when a non-boolean value is used in a boolean context, such as in an `if` statement or logical operation.
+
+  ```javascript
+  let value = ""; // Falsy value
+  if (value) {
+    console.log("Truthy");
+  } else {
+    console.log("Falsy"); // Output: Falsy
+  }
+  ```

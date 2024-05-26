@@ -10,17 +10,15 @@
 
 ### Summary
 
-<<<<<<< HEAD
-
 - [Values and Variables](#Values-and-Variables)
 - [Data Types](#Data-Types)
-- # [let const and var](#let-const-and-var)
+- [let const and var](#let-const-and-var)
 - [Values and Variables](#Values-and-Variables)
 - [Data Types](#Data-Types)
 - [let, const and var](#let,-const-and-var)
-  > > > > > > > 21e9312 (Update README.md)
 - [Operators](#Operators)
 - [Operator Precedence](#Operator-Precedence)
+- [String and Template Literals](#String-and-Template-Literals)
 
 ## Values and Variables
 
@@ -252,3 +250,73 @@ The following table lists operators in descending order of precedence (from high
 | 17.11      | `Bitwise=`   | Bitwise OR assignment           | Right to left | `x Bitwise= 5 // x=x Bitwise 5` |
 | 18         | `yield`      | Pause function                  | Right to left | `yield x`                       |
 | 19         | `,`          | Comma                           | Left to right | `x, y`                          |
+
+## String and Template Literals
+
+### String
+
+Strings are used for storing and manipulating text. A string can be any text inside quotes. You can use single or double quotes:
+
+```javascript
+let text = "Hello, World!";
+```
+
+### String Properties and Methods
+
+Strings in JavaScript are objects and come with various properties and methods:
+
+- **length**: Returns the length of the string.
+- **toUpperCase()**: Converts the string to uppercase.
+- **toLowerCase()**: Converts the string to lowercase.
+- **charAt(index)**: Returns the character at the specified index.
+- **substring(start, end)**: Extracts characters from a string, between two specified indices.
+- **split(separator)**: Splits a string into an array of substrings based on a separator.
+
+```javascript
+let text = "Hello, World!";
+console.log(text.length); // 13
+console.log(text.toUpperCase()); // "HELLO, WORLD!"
+console.log(text.toLowerCase()); // "hello, world!"
+console.log(text.charAt(1)); // "e"
+console.log(text.substring(0, 5)); // "Hello"
+console.log(text.split(", ")); // ["Hello", "World!"]
+```
+
+### Template Literals
+
+Template literals are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them. Template literals are enclosed by backticks (\` \`).
+
+> **Syntax:** Template literals use backticks (\` \`) rather than the single or double quotes used for strings. They can contain placeholders, which are represented by `${expression}`.
+
+```javascript
+let name = "Alice";
+let greeting = `Hello, ${name}!`;
+console.log(greeting); // "Hello, Alice!"
+```
+
+### Multi-line Strings
+
+Template literals make it simple to create multi-line strings:
+
+```javascript
+let multiLine = `This is a string
+that spans across
+multiple lines.`;
+console.log(multiLine);
+/*output
+This is a string
+that spans across
+multiple lines.
+*/
+```
+
+### Expression Interpolation
+
+You can embed any expression within a template literal, including mathematical operations, function calls, and object properties:
+
+```javascript
+let a = 5;
+let b = 10;
+let result = `The sum of ${a} and ${b} is ${a + b}.`;
+console.log(result); // "The sum of 5 and 10 is 15."
+```

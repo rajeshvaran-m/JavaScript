@@ -28,5 +28,6 @@ let averagePopulationOfCountry = 33;
 if(population > averagePopulationOfCountry) console.log('my country has more population than average population of a country');
 else console.log('Average population of a country is more thn the population of my country');
 
-const description = country + ' is in ' + continent + ', and it has ' + population + ' million people speak ' + language;
-console.log(description)
+//String and Template Literals
+const description = `${country} is in ${continent}, and it has ${population} million people speak ${language}`
+console.log(description);

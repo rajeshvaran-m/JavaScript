@@ -1,7 +1,7 @@
 //Values and Variables
 const country = 'India';
 const continent = 'Asia';
-let population = 1441
+let population = 1441;
 
 //Data Types
 const isIsland = false;
@@ -37,6 +37,7 @@ else{
     console.log(`${country}'s population is ${averagePopulationOfCountry - population} million below average`);
 }
 
+/*
 //Type Conversion and Coercion
 console.log('9' - '5'); // -> 4
 console.log('19' - '13' + '17'); // -> "617"
@@ -60,4 +61,13 @@ if(numNeighbors === 1){
     console.log('More than 1 boarder');
 }else{
     console.log('No borders')
+}
+*/
+
+// Logical Operators
+
+if((population <  50) && (language.toLowerCase() === 'english') && !isIsland){
+    console.log(`You should live in ${country} :)`);
+} else{
+    console.log(`${country} does not meet your criteria :(`);
 }

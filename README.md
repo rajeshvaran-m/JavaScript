@@ -13,9 +13,7 @@
 - [Values and Variables](#Values-and-Variables)
 - [Data Types](#Data-Types)
 - [let const and var](#let-const-and-var)
-- [Values and Variables](#Values-and-Variables)
-- [Data Types](#Data-Types)
-- [let, const and var](#let,-const-and-var)
+- [Boolean Logic](#Boolean-Logic)
 - [Operators](#Operators)
 - [Operator Precedence](#Operator-Precedence)
 - [String and Template Literals](#String-and-Template-Literals)
@@ -23,6 +21,7 @@
 - [Type Conversion and Coercion](#Type-Conversion-and-Coercion)
 - [Truthy and Falsy Values](#Truthy-and-Falsy-Values)
 - [Loose vs Strict Equality](#Loose-vs-Strict-Equality)
+- [Logical Operators](#Logical-Operators)
 
 ## Values and Variables
 
@@ -151,6 +150,19 @@ NAME = "James Murphy";
 **For now we will be only using let or const variables**
 
 ** var details Will be updated in the future **
+
+## Boolean Logic
+
+Boolean logic in JavaScript involves the use of boolean values (`true` and `false`) and logical operators to make decisions and control the flow of a program.
+
+#### Boolean Values
+
+In JavaScript, `true` and `false` are the two boolean values representing true and false, respectively.
+
+```javascript
+let isTrue = true;
+let isFalse = false;
+```
 
 ## Operators
 
@@ -514,3 +526,38 @@ In JavaScript, `==` and `===` are both comparison operators used to compare valu
   ```
 
   > In this example, the number 5 is not strictly equal to the string "5" because they are of different types. JavaScript does not perform any type coercion, so the comparison results in false.
+
+## Logical Operators
+
+Logical operators are used to perform logical operations on boolean values in JavaScript. JavaScript provides three logical operators: Logical AND (`&&`), Logical OR (`||`), and Logical NOT (`!`).
+
+### 1. Logical AND (&&)
+
+> The logical AND operator returns true if both operands are true, otherwise it returns false.
+
+```javascript
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && true); // false
+console.log(false && false); // false
+```
+
+### 2. Logical OR (||)
+
+> The logical OR operator returns true if at least one of the operands is true, otherwise it returns false.
+
+```javascript
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(false || false); // false
+```
+
+### 3. Logical NOT (!)
+
+> The logical NOT operator negates the boolean value of its operand. If the operand is true, it returns false, and if the operand is false, it returns true.
+
+```javascript
+console.log(!true); // false
+console.log(!false); // true
+```
